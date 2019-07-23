@@ -28,6 +28,7 @@ Weitere Informationen zu ug4 können sind hier zu finden:
 
 https://github.com/UG4/ugcore
 
+
 Based on UG4 (www.ug4.org/license)
 
 The following bibliography is recommended for citation and must be preserved in all covered files: "Reiter, S., Vogel, A., Heppner, I., Rupp, M., and Wittum, G. A massively parallel geometric multigrid solver on hierarchically distributed grids. Computing and visualization in science 16, 4 (2013), 151-164" "Vogel, A., Reiter, S., Rupp, M., Nägel, A., and Wittum, G. UG4 -- a novel flexible software system for simulating pde based models on high performance computers. Computing and visualization in science 16, 4 (2013), 165-179"
