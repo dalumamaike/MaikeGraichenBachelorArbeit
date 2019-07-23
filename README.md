@@ -1,4 +1,4 @@
-# MaikeGraichenBachelorArbeit
+# Bachelorarbeit von Maike Graichen
 Dieses Repository beinhaltet den Code für die Bachelorarbeit "Modellierung der Diffusion durch eine Membran in dreidimensionaler Auflösung" von Maike Graichen.
 
 Bestandteil sind folgende Dateien:
