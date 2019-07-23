@@ -24,7 +24,7 @@ Weitere Informationen sind hier zu finden:
 http://www.promesh3d.com
 
 # UG4
-Weitere Informationen zu ug4 können sind hier zu finden:
+Weitere Informationen zu ug4 sind hier zu finden:
 
 https://github.com/UG4/ugcore
 
