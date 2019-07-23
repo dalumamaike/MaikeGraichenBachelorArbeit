@@ -3,10 +3,10 @@ Dieses Repository beinhaltet den Code für die Bachelorarbeit "Modellierung der 
 
 Bestandteil sind folgende Dateien:
 
-[Modell1Generator.vrlp]
-[Modell1.ugx]
-[Modell2.ugx]
-[simulationDiffusion.lua]
+* [Modell1Generator.vrlp]
+* [Modell1.ugx]
+* [Modell2.ugx]
+* [simulationDiffusion.lua]
 
 
 In den weiteren Abschnitten wird die Nutzung dieser Dateien beschrieben.
