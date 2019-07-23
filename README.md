@@ -3,10 +3,11 @@ Dieses Repository beinhaltet den Code für die Bachelorarbeit "Modellierung der 
 
 Bestandteil sind folgende Dateien:
 
-Modell1Generator.vrlp
-Modell1.ugx
-Modell2.ugx
-simulationDiffusion.lua
+[Modell1Generator.vrlp]
+[Modell1.ugx]
+[Modell2.ugx]
+[simulationDiffusion.lua]
+
 
 In den weiteren Abschnitten wird die Nutzung dieser Dateien beschrieben.
 
@@ -31,11 +32,14 @@ The following bibliography is recommended for citation and must be preserved in 
 # Ausführen des Skripts
 Nach der erfolgreichen Kompilierung von ug4, kann das 'simulationDiffusion.lua'-Skript beispielsweise folgendermaßen ausgeführt werden:
 
+```
 cd ug4/runs 
 ugshell -ex Examples/simulationDiffusion.lua
+```
 
 Mögliche weitere Parameter können folgende sein:
-
+```
   -grid (Modell1 oder Modell2)
   -numRefs (Anzahl der Verfeinerungen)
   -dif (Werte auf der Hauptdiagonalen für den Diffusionstensor)
+```
