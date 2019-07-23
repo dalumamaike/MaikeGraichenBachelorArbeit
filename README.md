@@ -12,17 +12,20 @@ Bestandteil sind folgende Dateien:
 In den weiteren Abschnitten wird die Nutzung dieser Dateien beschrieben.
 
 # VRL-Studio
-Die Datei Modell1Generator.vrlp wurde mit VRL-Studio erstellt und muss auch mit diesem ausgeführt werden.
+Die Datei Modell1Generator.vrlp wurde mit VRL-Studio erstellt und muss auch mit diesem ausgeführt werden.  
 Weitere Informationen zu VRL-Studio sind hier zu finden:
+
 https://vrl-studio.mihosoft.eu
 
 # ProMesh
-Das Programm wurde zur Erstellung der Modell1.ugx und Modell2.ugx Dateien genutzt.
-Weitere Informationen sind hier zu finden:
+Das Programm wurde zur Erstellung der Modell1.ugx und Modell2.ugx Dateien genutzt.  
+Weitere Informationen sind hier zu finden:  
+
 http://www.promesh3d.com
 
 # UG4
 Weitere Informationen zu ug4 können sind hier zu finden:
+
 https://github.com/UG4/ugcore
 
 Based on UG4 (www.ug4.org/license)
