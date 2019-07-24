@@ -45,5 +45,5 @@ Mögliche weitere Parameter sind folgende:
 ```
   -grid (Modell1 oder Modell2)
   -numRefs (Anzahl der Verfeinerungen)
-  -dif (Werte auf der Hauptdiagonalen für den Diffusionstensor)
+  -diff (Werte auf der Hauptdiagonalen für den Diffusionstensor)
 ```
