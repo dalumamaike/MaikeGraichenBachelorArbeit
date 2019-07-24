@@ -41,7 +41,7 @@ cd ug4/runs
 ugshell -ex Examples/simulationDiffusion.lua
 ```
 
-Mögliche weitere Parameter können folgende sein:
+Mögliche weitere Parameter sind folgende:
 ```
   -grid (Modell1 oder Modell2)
   -numRefs (Anzahl der Verfeinerungen)
