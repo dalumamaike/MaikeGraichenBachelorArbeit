@@ -143,9 +143,9 @@ loeser:init(A, u)
 loeser:apply(u, b)
 
 
-solFileName = "sol_laplace_3d"
-print("schreibe Lösung nach '" .. solFileName .. "'...")
-WriteGridFunctionToVTK(u, solFileName)
+dateiName = "sol_laplace_3d"
+print("schreibe Lösung nach '" .. dateiName .. "'...")
+WriteGridFunctionToVTK(u, dateiName)
 
 
 print("Skript simulationDiffusion ist beendet")
