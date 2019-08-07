@@ -69,29 +69,29 @@ end
 
 function ErstelleDiskretisierung(approxRaum)
 	elemDisk = {}
-	elemDisk["T"] = ConvectionDiffusion("c", "innen", "fv1")
-	elemDisk["T"]:set_diffusion(1.0)
-	elemDisk["T"]:set_source(0)
+	elemDisk["Innen"] = ConvectionDiffusion("c", "innen", "fv1")
+	elemDisk["Innen"]:set_diffusion(1.0)
+	elemDisk["Innen"]:set_source(0)
 
 	if  geometrieName == "Modell2" then
-		elemDisk["T2"] = ConvectionDiffusion("c", "membran", "fv1")
-		elemDisk["T2"]:set_diffusion("DiffTensorMembran")
-		elemDisk["T2"]:set_source(0)
+		elemDisk["Membran"] = ConvectionDiffusion("c", "membran", "fv1")
+		elemDisk["Membran"]:set_diffusion("DiffTensorMembran")
+		elemDisk["Membran"]:set_source(0)
 	end
 
 	-- Dirichlet-Randbedingung
 	dirichletRB = DirichletBoundary()
 	dirichletRB:add(1.0, "c", "oben")
 
-	--Neumann-Randbedingung
+	-- Neumann-Randbedingung
 	neumannRB = NeumannBoundary("c")
 	neumannRB:add(1.0, "unten", "innen")
 
 
 	disk = DomainDiscretization(approxRaum)
-	disk:add(elemDisk["T"])
+	disk:add(elemDisk["Innen"])
 	if  geometrieName == "Modell2" then
-		disk:add(elemDisk["T2"])
+		disk:add(elemDisk["Membran"])
 	end
 	disk:add(dirichletRB)
 	disk:add(neumannRB)
@@ -136,15 +136,16 @@ u:set(0.0)
 disk:adjust_solution(u)
 disk:assemble_linear(A, b)
 
-SaveVectorForConnectionViewer(b, "b_laplace_2d.vec")
-SaveMatrixForConnectionViewer(u, A, "A_laplace_3d.mat")
-
 loeser:init(A, u)
 loeser:apply(u, b)
 
 
-dateiName = "sol_laplace_3d"
-print("schreibe Lösung nach '" .. dateiName .. "'...")
+dateiName = "Verfeinerung" .. verfeinerungen .. geometrieName
+
+if geometrieName == "Modell2" then
+	dateiName = dateiName .. "Diffusion" .. string.sub(diffusion, 3)
+end
+print("schreibe Lösung nach " .. dateiName)
 WriteGridFunctionToVTK(u, dateiName)
 
 
